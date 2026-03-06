@@ -1,13 +1,167 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>technical-portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brittany Parker | AI Systems Developer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <div class="bg-glow"></div>
+
+    <nav class="container" style="padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center;">
+        <div class="logo code-font neon-text" style="font-weight: bold; font-size: 1.2rem;">BRITTANY_SYSTEM_V1.0</div>
+        <div class="nav-links space-font" style="display: flex; gap: 2rem; font-size: 0.9rem;">
+            <a href="#about" class="neon-text" style="text-decoration: none;">ABOUT</a>
+            <a href="#projects" class="neon-text" style="text-decoration: none;">PROJECTS</a>
+            <a href="#ai-lab" class="neon-text" style="text-decoration: none;">AI_LAB</a>
+            <a href="#contact" class="neon-text" style="text-decoration: none;">CONTACT</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="section-padding dashboard-grid">
+            <div class="module-8 glass-panel hero-section">
+                <div class="terminal code-font" id="terminal-boot" style="margin-bottom: 2rem; min-height: 100px; color: var(--neon-blue); font-size: 0.85rem; opacity: 0.7;">
+                    <!-- Boot sequence will type here -->
+                </div>
+                
+                <h2 class="purple-text" style="font-size: 1rem; letter-spacing: 2px; text-transform: uppercase;">AI Systems Developer</h2>
+                <h1 style="font-size: 4.5rem; line-height: 1; margin: 1rem 0;">Brittany Parker</h1>
+                <p style="font-size: 1.2rem; margin-bottom: 2.5rem; max-width: 600px; color: var(--text-white);">
+                    Founder of <span class="neon-text">AutonateAI</span>. Building AI-powered platforms, automation systems, and developer tools.
+                </p>
+                
+                <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+                    <a href="#ai-lab" class="btn btn-primary">Explore Systems</a>
+                    <a href="#projects" class="btn btn-outline">View Projects</a>
+                </div>
+            </div>
+
+            <div class="module-4 glass-panel">
+                <h3 class="space-font" style="font-size: 0.9rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--panel-border); padding-bottom: 0.5rem;">SYSTEM STATUS</h3>
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="code-font" style="font-size: 0.8rem;">AutonateAI Platform</span>
+                        <div class="status-pill"><div class="pulse-dot"></div>ONLINE</div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="code-font" style="font-size: 0.8rem;">AI Tools</span>
+                        <div class="status-pill"><div class="pulse-dot"></div>ACTIVE</div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="code-font" style="font-size: 0.8rem;">Experiments</span>
+                        <div class="status-pill"><div class="pulse-dot"></div>RUNNING</div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="code-font" style="font-size: 0.8rem;">GitHub Activity</span>
+                        <div class="status-pill"><div class="pulse-dot"></div>ACTIVE</div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 3rem; text-align: center;">
+                    <div class="code-font" style="font-size: 0.7rem; color: var(--neon-blue);">LOAD_AVERAGE: 0.42</div>
+                    <div style="height: 4px; background: var(--panel-border); margin-top: 0.5rem; border-radius: 2px; overflow: hidden;">
+                        <div style="width: 42%; height: 100%; background: var(--neon-blue);"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-padding">
+            <h2 class="space-font neon-text" style="font-size: 2rem; margin-bottom: 3rem;">CORE_MODULES / PROJECTS</h2>
+            <div class="dashboard-grid">
+                <div class="module-6 glass-panel project-card">
+                    <div class="code-font" style="font-size: 0.7rem; margin-bottom: 0.5rem; color: var(--electric-purple);">PID: 10293</div>
+                    <h3>AutonateAI Platform</h3>
+                    <p style="color: var(--text-white); margin-top: 1rem; font-size: 0.95rem;">
+                        AI-powered development tools, templates, and automation workflows for modern engineering teams.
+                    </p>
+                    <div class="tag-list">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">OpenAI</span>
+                        <span class="tag">TypeScript</span>
+                    </div>
+                    <div style="margin-top: auto;">
+                        <a href="#" class="neon-text code-font" style="font-size: 0.8rem; text-decoration: none;">[ ACCESS_MODULE ]</a>
+                    </div>
+                </div>
+
+                <div class="module-6 glass-panel project-card">
+                    <div class="code-font" style="font-size: 0.7rem; margin-bottom: 0.5rem; color: var(--electric-purple);">PID: 10294</div>
+                    <h3>Reddit AI CLI Bot</h3>
+                    <p style="color: var(--text-white); margin-top: 1rem; font-size: 0.95rem;">
+                        AI-powered Reddit automation bot using PRAW and OpenAI API for intelligent content moderation and generation.
+                    </p>
+                    <div class="tag-list">
+                        <span class="tag">Python</span>
+                        <span class="tag">PRAW</span>
+                        <span class="tag">LLM</span>
+                    </div>
+                    <div style="margin-top: auto;">
+                        <a href="#" class="neon-text code-font" style="font-size: 0.8rem; text-decoration: none;">[ SOURCE_REPO ]</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Lab Section -->
+        <section id="ai-lab" class="section-padding glass-panel" style="background: rgba(123, 97, 255, 0.02); border-color: rgba(123, 97, 255, 0.1);">
+            <h2 class="space-font purple-text" style="font-size: 2rem; margin-bottom: 2rem;">AI_LAB / EXPERIMENTS</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                <div style="padding: 1rem; border-left: 2px solid var(--electric-purple);">
+                    <h4 class="code-font">OpenAI CLI Tools</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7;">Terminal-based LLM utilities</p>
+                </div>
+                <div style="padding: 1rem; border-left: 2px solid var(--electric-purple);">
+                    <h4 class="code-font">AI Content Pipelines</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7;">Automated video synthesis</p>
+                </div>
+                <div style="padding: 1rem; border-left: 2px solid var(--electric-purple);">
+                    <h4 class="code-font">Automation Bots</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7;">Multi-agent task orchestration</p>
+                </div>
+                <div style="padding: 1rem; border-left: 2px solid var(--electric-purple);">
+                    <h4 class="code-font">Prompt Engineering</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7;">Context-aware prompt matrices</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding">
+            <div class="glass-panel" style="max-width: 600px; margin: 0 auto; text-align: center;">
+                <h2 class="space-font neon-text" style="margin-bottom: 1rem;">INITIALIZE_COMMUNICATION</h2>
+                <p style="margin-bottom: 2.5rem; opacity: 0.7;">Establish a direct secure channel for collaboration.</p>
+                
+                <form id="contact-form" style="display: flex; flex-direction: column; gap: 1.5rem; text-align: left;">
+                    <div>
+                        <label class="code-font" style="font-size: 0.75rem; display: block; margin-bottom: 0.5rem;">NAME_ID</label>
+                        <input type="text" style="width: 100%; background: rgba(255,255,255,0.05); border: 1px solid var(--panel-border); padding: 0.75rem; border-radius: 8px; color: white; outline: none;" placeholder="Full Name">
+                    </div>
+                    <div>
+                        <label class="code-font" style="font-size: 0.75rem; display: block; margin-bottom: 0.5rem;">EMAIL_ENDPOINT</label>
+                        <input type="email" style="width: 100%; background: rgba(255,255,255,0.05); border: 1px solid var(--panel-border); padding: 0.75rem; border-radius: 8px; color: white; outline: none;" placeholder="email@address.com">
+                    </div>
+                    <div>
+                        <label class="code-font" style="font-size: 0.75rem; display: block; margin-bottom: 0.5rem;">PAYLOAD</label>
+                        <textarea rows="4" style="width: 100%; background: rgba(255,255,255,0.05); border: 1px solid var(--panel-border); padding: 0.75rem; border-radius: 8px; color: white; outline: none;" placeholder="Message payload..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="justify-content: center;">TRANSMIT_MESSAGE</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container" style="padding: 4rem 0; border-top: 1px solid var(--panel-border); text-align: center; opacity: 0.5; font-size: 0.8rem;">
+        <div class="code-font">&copy; 2026 BRITTANY_PARKER // SYSTEM_VERSION_1.0 // POWERED_BY_AI</div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
 </html>
