@@ -1,12 +1,12 @@
 export const initAnimations = () => {
-    // Terminal Boot Sequence
+    // Terminal Boot Sequence - Updated for V2.0
     const terminal = document.getElementById('terminal-boot');
     const bootLines = [
-        "Initializing Brittany_AI_System...",
-        "Loading developer modules...",
-        "Loading AI integrations...",
-        "Establishing neural links...",
-        "System ready."
+        "> INITIALIZING_PRISMATIC_CORE...",
+        "> LOADING_BIOMETRICS: BRITTANY_PARKER",
+        "> SYNCING_AUTONATE_AI_MODULES...",
+        "> ESTABLISHING_NEURAL_LINK...",
+        "> SYSTEM_V2.0_ONLINE."
     ];
 
     let currentLine = 0;
@@ -14,6 +14,7 @@ export const initAnimations = () => {
         if (currentLine < bootLines.length) {
             const line = document.createElement('div');
             line.className = 'boot-line';
+            line.style.marginBottom = '4px';
             terminal.appendChild(line);
             
             let charIndex = 0;
@@ -25,31 +26,32 @@ export const initAnimations = () => {
                 if (charIndex === text.length) {
                     clearInterval(interval);
                     currentLine++;
-                    setTimeout(typeLine, 400);
+                    setTimeout(typeLine, 300);
                 }
-            }, 30);
+            }, 25);
         }
     };
 
-    typeLine();
+    if (terminal) typeLine();
 
-    // Section Fade-ins
+    // Section Staggered Reveal
     anime({
         targets: '.glass-panel',
         opacity: [0, 1],
-        translateY: [20, 0],
-        delay: anime.stagger(200),
-        duration: 1000,
-        easing: 'easeOutQuad'
+        translateY: [30, 0],
+        scale: [0.98, 1],
+        delay: anime.stagger(150),
+        duration: 1200,
+        easing: 'easeOutElastic(1, .8)'
     });
 
-    // Background Glow Animation
+    // Prismatic Background Pulse
     anime({
         targets: '.bg-glow',
-        opacity: [0.4, 0.7],
-        duration: 5000,
+        opacity: [0.5, 0.8],
+        duration: 4000,
         direction: 'alternate',
         loop: true,
-        easing: 'easeInOutSine'
+        easing: 'easeInOutQuad'
     });
 };
