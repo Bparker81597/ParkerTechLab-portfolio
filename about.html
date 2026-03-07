@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Parker Tech Lab</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <div class="bg-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-wrapper">
+                <div style="background: white; padding: 2px; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
+                    <img src="assets/images/logo.png" alt="PTL" class="monogram" style="height: 28px;">
+                </div>
+                <span class="brand-text">Parker Tech Lab</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active" style="color: var(--accent-blue);">About</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                        <span id="theme-icon">🌙</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- About Header -->
+        <section class="container" style="padding-top: 12rem;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center;">
+                <div class="about-visual" style="padding: 2rem; background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border); transform: rotate(-2deg);">
+                    <div style="width: 100%; aspect-ratio: 1; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.3);">
+                        <img src="assets/images/brittany-parker.png" alt="Brittany Parker" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.95;">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="code-font text-blue" style="letter-spacing: 3px; text-transform: uppercase; font-size: 0.8rem;">[ SYSTEM_PROFILE ]</span>
+                    <h1 style="font-size: 4rem; line-height: 1.1; margin: 1.5rem 0;">Brittany <br><span class="text-gold">Parker.</span></h1>
+                    <p class="text-secondary" style="font-size: 1.2rem; margin-bottom: 2rem;">
+                        Lead Developer at <span class="text-blue">AutonateAI</span>. Specialized in bridging complex AI capabilities with practical, high-performance software solutions.
+                    </p>
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="#" class="btn btn-primary">Download Resume</a>
+                        <a href="#contact" class="btn btn-outline">Let's Collaborate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Detail -->
+        <section style="background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+            <div class="container" style="max-width: 800px; text-align: center;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Engineering the Future of <span class="text-blue">Automation.</span></h2>
+                <p class="text-secondary" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+                    Parker Tech Lab represents more than just a brand—it's a commitment to technical precision and scalable innovation. My work focuses on architecting intelligent systems that empower users through seamless integration and human-centered design.
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 4rem;">
+                    <div>
+                        <h3 class="text-gold" style="font-size: 1.2rem; margin-bottom: 1rem;">Precision</h3>
+                        <p style="font-size: 0.85rem; opacity: 0.7;">Rigorous architectural standards for every module.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-blue" style="font-size: 1.2rem; margin-bottom: 1rem;">Scalability</h3>
+                        <p style="font-size: 0.85rem; opacity: 0.7;">Built to handle growth and complex orchestration.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-cyan" style="font-size: 1.2rem; margin-bottom: 1rem;">Innovation</h3>
+                        <p style="font-size: 0.85rem; opacity: 0.7;">Pushing the boundaries of what AI can achieve.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container" style="max-width: 800px; text-align: center;">
+            <h2 style="font-size: 3rem; margin-bottom: 1.5rem;">Initialize Signal<span class="text-gold">.</span></h2>
+            <p class="text-secondary" style="margin-bottom: 4rem;">Secure communication channel for project inquiries.</p>
+            <div style="background: var(--surface); padding: 3rem; border-radius: var(--radius); border: 1px solid var(--border); text-align: left;">
+                <form id="contact-form" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <input type="text" placeholder="ID / Name" style="width: 100%; background: var(--bg-dark); border: 1px solid var(--border); padding: 1rem; border-radius: 8px; color: white;">
+                        <input type="email" placeholder="Return Endpoint / Email" style="width: 100%; background: var(--bg-dark); border: 1px solid var(--border); padding: 1rem; border-radius: 8px; color: white;">
+                    </div>
+                    <textarea rows="5" placeholder="Payload / Message" style="width: 100%; background: var(--bg-dark); border: 1px solid var(--border); padding: 1rem; border-radius: 8px; color: white;"></textarea>
+                    <button type="submit" class="btn btn-primary" style="justify-content: center;">[ BROADCAST_SIGNAL ]</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer style="border-top: 1px solid var(--border); padding: 6rem 0; margin-top: 4rem;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: 4rem;">
+            <div class="footer-brand">
+                <div class="brand-wrapper" style="margin-bottom: 0.5rem;">
+                    <div style="background: white; padding: 2px; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
+                        <img src="assets/images/logo.png" alt="PTL" class="monogram" style="height: 28px;">
+                    </div>
+                    <span class="brand-text">Parker Tech Lab</span>
+                </div>
+                <span class="footer-tagline">AI SYSTEMS • AUTOMATION • INNOVATION</span>
+            </div>
+            <div style="display: flex; gap: 4rem; font-size: 0.9rem;">
+                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <h4 class="text-blue">Navigation</h4>
+                    <a href="index.html" class="text-secondary">Home</a>
+                    <a href="about.html" class="text-secondary">About</a>
+                    <a href="index.html#projects" class="text-secondary">Projects</a>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <h4 class="text-blue">Connect</h4>
+                    <a href="#" class="text-secondary">LinkedIn</a>
+                    <a href="#" class="text-secondary">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.05); text-align: center; font-size: 0.8rem; color: var(--text-secondary); opacity: 0.6;">
+            &copy; 2026 Parker Tech Lab // Engineered by Brittany Parker
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

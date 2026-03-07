@@ -30,6 +30,7 @@
 .monogram {
     height: 32px;
     width: auto;
+    object-fit: contain;
 }
 
 .brand-text {
@@ -88,11 +89,13 @@
 .hero-logo-container {
     width: 100%;
     max-width: 480px;
+    aspect-ratio: 1;
 }
 
 .hero-full-logo {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
     filter: drop-shadow(0 0 20px rgba(56, 189, 248, 0.15));
 }
 
@@ -147,10 +150,10 @@
 }
 
 .card-monogram {
-    height: 20px;
+    height: 24px;
     width: auto;
-    opacity: 0.6;
-    margin-bottom: 1.5rem;
+    object-fit: contain;
+    opacity: 0.8;
 }
 
 /* Footer Brand Block */
