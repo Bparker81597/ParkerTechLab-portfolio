@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubbed In Diamonds | Spring Bloom Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Floating Motifs -->
+    <i class="fa-solid fa-seedling floating-motif" style="top: 15%; left: 5%; font-size: 2rem; color: #a5d6a7;"></i>
+    <i class="fa-solid fa-cloud floating-motif" style="top: 10%; right: 10%; font-size: 3rem; color: #fff; animation-delay: 1s;"></i>
+    <i class="fa-solid fa-spa floating-motif" style="top: 40%; right: 5%; font-size: 2.5rem; color: #f48fb1; animation-delay: 2s;"></i>
+    <i class="fa-solid fa-leaf floating-motif" style="bottom: 20%; left: 8%; font-size: 2rem; color: #81c784; animation-delay: 3s;"></i>
+
+    <header>
+        <!-- Animated Butterflies -->
+        <div class="butterfly-container butterfly-1"><div class="butterfly"><div class="wing wing-left"></div><div class="wing wing-right"></div></div></div>
+        <div class="butterfly-container butterfly-2"><div class="butterfly"><div class="wing wing-left"></div><div class="wing wing-right"></div></div></div>
+        <div class="butterfly-container butterfly-3"><div class="butterfly"><div class="wing wing-left"></div><div class="wing wing-right"></div></div></div>
+        
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <a href="#" class="logo">RUBBED IN DIAMONDS</a>
+            <nav style="display: flex; gap: 30px; align-items: center;">
+                <a href="#collections" style="text-decoration: none; color: var(--text-main); font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">Shop</a>
+                <a href="#story" style="text-decoration: none; color: var(--text-main); font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">Heritage</a>
+                <div style="background: var(--text-main); color: #fff; padding: 10px 20px; border-radius: 50px; font-size: 0.8rem; font-weight: 700; cursor: pointer;">CART (0)</div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <i class="fa-solid fa-rabbit bunny-icon"></i>
+                    <h1 style="color: var(--text-main);">Season of <br><span style="color: var(--accent-gold);">Radiant Bloom</span></h1>
+                    <p style="font-size: 1.2rem; max-width: 500px; margin-bottom: 40px; color: var(--text-main); font-weight: 500;">Experience the luxury of diamond-infused renewal. Handcrafted in small batches as the first spring flowers begin to wake.</p>
+                    <a href="#collections" class="btn-bloom">Explore The Boutique</a>
+                </div>
+            </div>
+            <div class="hero-visual"></div>
+        </section>
+
+        <!-- Trust Section -->
+        <section style="background: var(--secondary-bg); padding: 100px 0; position: relative;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 50px; text-align: center;">
+                    <div>
+                        <i class="fa-solid fa-hand-holding-heart" style="font-size: 2.5rem; color: var(--accent-gold); margin-bottom: 20px;"></i>
+                        <h3 style="font-family: 'Playfair Display'; margin-bottom: 10px;">Handcrafted Love</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Small-batch purity from our heart to your skin.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-sun" style="font-size: 2.5rem; color: var(--accent-gold); margin-bottom: 20px;"></i>
+                        <h3 style="font-family: 'Playfair Display'; margin-bottom: 10px;">Spring Renewal</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Formulated for a fresh, post-winter glow.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-gem" style="font-size: 2.5rem; color: var(--accent-gold); margin-bottom: 20px;"></i>
+                        <h3 style="font-family: 'Playfair Display'; margin-bottom: 10px;">Diamond Dust</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Professional-grade minerals for lasting radiance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="organic-divider"></div>
+        </section>
+
+        <!-- Product Collections -->
+        <section id="collections" style="padding: 120px 0;">
+            <div class="container">
+                <div style="text-align: center;">
+                    <i class="fa-solid fa-carrot" style="color: #ffb74d; font-size: 1.5rem; margin-bottom: 15px;"></i>
+                    <h2 style="font-family: 'Playfair Display'; font-size: 3.5rem; color: var(--text-main);">The Spring Selection</h2>
+                    <div class="tab-container">
+                        <button class="tab-btn active" onclick="switchCategory('scrubs')">Body Scrubs</button>
+                        <button class="tab-btn" onclick="switchCategory('soaps')">Artisan Soaps</button>
+                        <button class="tab-btn" onclick="switchCategory('bundles')">Gift Bundles</button>
+                    </div>
+                </div>
+
+                <!-- Scrubs Category -->
+                <div id="scrubs" class="product-section active">
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
+                        <div class="product-card">
+                            <div class="product-img-wrapper" style="background: var(--accent-pink);">
+                                <img src="assets/images/diamond-dust-scrub.png" alt="Diamond Dust Scrub">
+                            </div>
+                            <h3 style="font-family: 'Playfair Display'; font-size: 1.5rem; margin-bottom: 10px;">Diamond Dust Scrub</h3>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">Mineral micro-crystals for a mirror-like shine.</p>
+                            <div style="font-weight: 700; color: var(--accent-gold); font-size: 1.2rem; margin-bottom: 20px;">$24.99</div>
+                            <a href="#" class="btn-bloom" style="padding: 10px 25px; font-size: 0.8rem;">Add to Bloom</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img-wrapper" style="background: var(--accent-mint);">
+                                <img src="assets/images/spring-apple-zest.png" alt="Spring Apple Zest">
+                            </div>
+                            <h3 style="font-family: 'Playfair Display'; font-size: 1.5rem; margin-bottom: 10px;">Spring Apple Zest</h3>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">Crisp, tart, and refreshing for morning renewal.</p>
+                            <div style="font-weight: 700; color: var(--accent-gold); font-size: 1.2rem; margin-bottom: 20px;">$22.99</div>
+                            <a href="#" class="btn-bloom" style="padding: 10px 25px; font-size: 0.8rem;">Add to Bloom</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img-wrapper" style="background: var(--accent-lavender);">
+                                <img src="assets/images/midnight-emerald.png" alt="Midnight Emerald">
+                            </div>
+                            <h3 style="font-family: 'Playfair Display'; font-size: 1.5rem; margin-bottom: 10px;">Midnight Emerald</h3>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">Detox charcoal meets organic clover oil.</p>
+                            <div style="font-weight: 700; color: var(--accent-gold); font-size: 1.2rem; margin-bottom: 20px;">$26.99</div>
+                            <a href="#" class="btn-bloom" style="padding: 10px 25px; font-size: 0.8rem;">Add to Bloom</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soaps Category -->
+                <div id="soaps" class="product-section">
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; max-width: 900px; margin: 0 auto;">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1600857062241-99e5daec63cc?q=80&w=2000&auto=format&fit=crop" alt="Shamrock Silk Bar">
+                            </div>
+                            <h3 style="font-family: 'Playfair Display'; font-size: 1.5rem; margin-bottom: 10px;">Shamrock Silk Bar</h3>
+                            <p style="font-size: 0.85rem; color: var(--text-muted);">Triple-milled goat milk and organic peppermint.</p>
+                            <div style="font-weight: 700; color: var(--accent-gold); margin-top: 15px;">$12.99</div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1607006344380-b6775a0824a7?q=80&w=2000&auto=format&fit=crop" alt="Spring Lily Bar">
+                            </div>
+                            <h3 style="font-family: 'Playfair Display'; font-size: 1.5rem; margin-bottom: 10px;">Spring Lily Bar</h3>
+                            <p style="font-size: 0.85rem; color: var(--text-muted);">Soothing lavender and white lily for soft skin.</p>
+                            <div style="font-weight: 700; color: var(--accent-gold); margin-top: 15px;">$12.99</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bundles Category -->
+                <div id="bundles" class="product-section">
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px;">
+                        <div class="product-card" style="background: var(--accent-mint); border: none;">
+                            <div class="product-img-wrapper" style="height: 350px;">
+                                <img src="https://images.unsplash.com/photo-1513201099705-a9746e1e201f?q=80&w=2000&auto=format&fit=crop" alt="The Bunny Bundle">
+                            </div>
+                            <h3 style="font-family: 'Playfair Display'; font-size: 1.8rem; margin: 20px 0 10px;">The Bunny Bundle</h3>
+                            <p style="margin-bottom: 20px;">A seasonal set of our best-selling spring favorites.</p>
+                            <div style="font-weight: 700; font-size: 1.5rem; color: var(--text-main);">$49.99</div>
+                        </div>
+                        <div class="product-card" style="background: var(--accent-pink); border: none;">
+                            <div class="product-img-wrapper" style="height: 350px;">
+                                <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=2000&auto=format&fit=crop" alt="Floral Glow Set">
+                            </div>
+                            <h3 style="font-family: 'Playfair Display'; font-size: 1.8rem; margin: 20px 0 10px;">Floral Glow Set</h3>
+                            <p style="margin-bottom: 20px;">Curated for a professional, radiant spring finish.</p>
+                            <div style="font-weight: 700; font-size: 1.5rem; color: var(--text-main);">$39.99</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section id="story" style="background: var(--secondary-bg); padding: 150px 0; border-radius: 100px 100px 0 0;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+                    <div style="position: relative;">
+                        <div style="width: 100%; height: 600px; background: url('https://images.unsplash.com/photo-1612817288484-6f916006741a?q=80&w=2070&auto=format&fit=crop'); background-size: cover; border-radius: 50% 50% 50% 0%; box-shadow: 0 40px 80px rgba(0,0,0,0.1);"></div>
+                        <i class="fa-solid fa-seedling" style="position: absolute; bottom: -30px; right: 20px; font-size: 4rem; color: var(--accent-gold);"></i>
+                    </div>
+                    <div>
+                        <span style="color: var(--accent-gold); font-weight: 700; letter-spacing: 2px; text-transform: uppercase;">Our Spring Heritage</span>
+                        <h2 style="font-family: 'Playfair Display'; font-size: 4rem; line-height: 1.1; margin: 20px 0;">Hand-Crafted in <br>Flint, MI.</h2>
+                        <p style="margin-bottom: 30px; font-size: 1.1rem; color: var(--text-muted);">As the frost melts in Michigan, our studio begins its most radiant season. We believe that spring skincare should be as pure and brilliant as a diamond.</p>
+                        <p style="margin-bottom: 40px; font-size: 1.1rem; color: var(--text-muted);">Small-batch creation ensures that every jar of Rubbed In Diamonds scrub is packed with potent, fresh botanicals and professional minerals.</p>
+                        <a href="#" class="btn-bloom">Read Our Full Story</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background: #fff; padding: 100px 0 40px;">
+        <div class="container" style="text-align: center;">
+            <a href="#" class="logo" style="font-size: 2.5rem; display: block; margin-bottom: 40px;">RUBBED IN DIAMONDS</a>
+            <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 60px;">
+                <a href="#" style="color: var(--text-muted); text-decoration: none; font-weight: 700;">INSTAGRAM</a>
+                <a href="#" style="color: var(--text-muted); text-decoration: none; font-weight: 700;">FACEBOOK</a>
+                <a href="#" style="color: var(--text-muted); text-decoration: none; font-weight: 700;">TIKTOK</a>
+            </div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); letter-spacing: 1px;">&copy; 2026 RUBBED IN DIAMONDS. ALL RIGHTS RESERVED. HANDCRAFTED WITH LUCK & LOVE.</div>
+        </div>
+    </footer>
+
+    <script>
+        function switchCategory(category) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            document.querySelectorAll('.product-section').forEach(section => section.classList.remove('active'));
+            document.getElementById(category).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
