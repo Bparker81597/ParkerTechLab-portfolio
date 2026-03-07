@@ -1,17 +1,16 @@
-/* Navbar Components */
+/* Navbar */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
+    height: 72px;
     background: var(--glass-bg);
-    backdrop-filter: blur(12px);
+    backdrop-filter: saturate(180%) blur(20px);
     border-bottom: 1px solid var(--border);
     z-index: 1000;
     display: flex;
     align-items: center;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .nav-container {
@@ -25,157 +24,173 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
+    text-decoration: none;
+}
+
+.monogram-container {
+    background: #FFFFFF;
+    padding: 4px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .monogram {
-    height: 32px;
+    height: 24px;
     width: auto;
     object-fit: contain;
 }
 
 .brand-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
-    letter-spacing: -0.5px;
-    font-family: 'Space Grotesk', sans-serif;
+    color: var(--text-primary);
 }
 
 .nav-menu {
     display: flex;
-    gap: 2.5rem;
+    gap: 2rem;
     align-items: center;
     list-style: none;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 500;
 }
 
-/* Theme Toggle */
-.theme-toggle {
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--text-primary);
+}
+
+/* Bento Grid */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+}
+
+.agent-card {
+    grid-column: span 12;
     background: var(--surface);
     border: 1px solid var(--border);
-    color: var(--text-primary);
-    width: 42px;
-    height: 42px;
+    border-radius: var(--radius);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    transition: var(--transition);
+    text-decoration: none;
+    color: inherit;
+}
+
+.agent-card:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-4px);
+}
+
+.agent-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.agent-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    transition: var(--transition), background-color 0.3s ease, border-color 0.3s ease;
+    font-size: 1.5rem;
 }
 
-.theme-toggle:hover {
-    border-color: var(--accent-blue);
-    transform: scale(1.1);
-}
-
-[data-theme="light"] .monogram,
-[data-theme="light"] .hero-full-logo {
-    filter: none;
-}
-
-.nav-link:hover {
+.agent-status {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: rgba(0, 122, 255, 0.1);
     color: var(--accent-blue);
 }
 
-/* Hero Brand Block */
-.hero-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
+.agent-title {
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
-.hero-logo-container {
-    width: 100%;
-    max-width: 480px;
-    aspect-ratio: 1;
+.agent-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
 }
 
-.hero-full-logo {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    filter: drop-shadow(0 0 20px rgba(56, 189, 248, 0.15));
+.tag-list {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
+.tag {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+}
+
+@media (min-width: 768px) {
+    .span-6 { grid-column: span 6; }
+    .span-4 { grid-column: span 4; }
+    .span-8 { grid-column: span 8; }
+}
+
+/* Buttons */
 .btn {
     display: inline-flex;
     align-items: center;
-    padding: 0.9rem 1.8rem;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
     border-radius: 8px;
     font-weight: 600;
+    font-size: 0.9rem;
     transition: var(--transition);
-    border: none;
+    border: 1px solid transparent;
     cursor: pointer;
-    font-size: 0.95rem;
+    text-decoration: none;
 }
 
 .btn-primary {
-    background: var(--accent-blue);
-    color: var(--bg-dark);
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
-.btn-primary:hover {
-    background: var(--accent-cyan);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(34, 211, 238, 0.3);
-}
-
-.btn-outline {
-    border: 1px solid var(--border);
+.btn-secondary {
     background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
     color: var(--text-primary);
 }
 
-.btn-outline:hover {
-    border-color: var(--accent-blue);
-    background: rgba(56, 189, 248, 0.05);
-    transform: translateY(-2px);
-}
-
-/* Project Card Branding */
-.project-card {
-    background: var(--surface);
+/* Theme Toggle */
+.theme-toggle {
+    background: transparent;
     border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 2.5rem;
-    transition: var(--transition), background-color 0.3s ease, border-color 0.3s ease;
-}
-
-.project-card:hover {
-    border-color: var(--accent-blue);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.card-monogram {
-    height: 24px;
-    width: auto;
-    object-fit: contain;
-    opacity: 0.8;
-}
-
-/* Footer Brand Block */
-.footer-brand {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-.footer-tagline {
-    font-size: 0.8rem;
-    letter-spacing: 2px;
     color: var(--text-secondary);
-    text-transform: uppercase;
-}
-
-@media (max-width: 992px) {
-    .hero-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 3rem;
-    }
-    .hero-logo-container { margin: 0 auto; order: -1; }
-    .nav-menu { display: none; }
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
