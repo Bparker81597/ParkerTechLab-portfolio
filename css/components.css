@@ -68,9 +68,9 @@
     transform: scale(1.1);
 }
 
-[data-theme="light"] .hero-full-logo,
-[data-theme="light"] .monogram {
-    filter: invert(1) hue-rotate(180deg) brightness(0.8);
+[data-theme="light"] .monogram,
+[data-theme="light"] .hero-full-logo {
+    filter: none;
 }
 
 .nav-link:hover {
