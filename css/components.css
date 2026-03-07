@@ -1,4 +1,4 @@
-/* Navbar */
+/* Navbar - Professional Blur */
 .navbar {
     position: fixed;
     top: 0;
@@ -11,6 +11,7 @@
     z-index: 1000;
     display: flex;
     align-items: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .nav-container {
@@ -67,11 +68,11 @@
     color: var(--text-primary);
 }
 
-/* Bento Grid */
+/* Bento Grid / Agent Cards */
 .bento-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .agent-card {
@@ -79,18 +80,27 @@
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 2rem;
+    padding: 2.5rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    transition: var(--transition);
+    transition: var(--transition), box-shadow 0.4s ease;
     text-decoration: none;
     color: inherit;
+    position: relative;
+    overflow: hidden;
 }
 
 .agent-card:hover {
-    border-color: rgba(255, 255, 255, 0.2);
+    border-color: var(--accent-blue);
     transform: translateY(-4px);
+    box-shadow: 0 0 30px rgba(0, 122, 255, 0.15);
+}
+
+.agent-card:active {
+    transform: translateY(-2px) scale(0.98);
+    box-shadow: 0 0 50px rgba(175, 82, 222, 0.3);
+    border-color: var(--accent-purple);
 }
 
 .agent-header {
@@ -155,6 +165,40 @@
     .span-8 { grid-column: span 8; }
 }
 
+/* About Page Pops */
+.photo-aura-container {
+    position: relative;
+    padding: 1rem;
+}
+
+.photo-aura {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110%;
+    height: 110%;
+    background: radial-gradient(circle, rgba(0, 122, 255, 0.15) 0%, rgba(175, 82, 222, 0.15) 50%, transparent 70%);
+    z-index: -1;
+    filter: blur(30px);
+    animation: aura-pulse 6s infinite alternate;
+}
+
+@keyframes aura-pulse {
+    0% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+    100% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.8; }
+}
+
+.bio-accent {
+    border-left: 2px solid var(--accent-blue);
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.matrix-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, transparent 100%);
+}
+
 /* Buttons */
 .btn {
     display: inline-flex;
@@ -193,4 +237,5 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: var(--transition);
 }
