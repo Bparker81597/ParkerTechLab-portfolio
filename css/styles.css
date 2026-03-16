@@ -475,7 +475,7 @@ img {
 }
 
 .btn-secondary {
-    background: white;
+    background: var(--bg-secondary);
     color: var(--text-primary);
     border: 1px solid var(--border);
 }
