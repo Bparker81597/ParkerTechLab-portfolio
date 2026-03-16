@@ -207,7 +207,7 @@ img {
 
 .nav-cta {
     background: var(--text-primary);
-    color: white;
+    color: var(--bg-primary);
     padding: 0.625rem 1.375rem;
     font-size: 0.875rem;
     font-weight: 500;
@@ -217,6 +217,7 @@ img {
 
 .nav-cta:hover {
     background: var(--accent-blue);
+    color: white;
     transform: translateY(-1px);
     box-shadow: var(--shadow-md);
 }
