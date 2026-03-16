@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Parker Tech Lab for your next web design or development project.">
+    <title>Contact | Parker Tech Lab</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="bg-glow"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-wrapper">
+                <span class="brand-logo">Parker Tech <span>Lab</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="work.html" class="nav-link">Work</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="contact.html" class="nav-cta">Start a Project</a></li>
+                <li>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <span id="theme-icon">🌙</span>
+                    </button>
+                </li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- PAGE HERO -->
+        <section class="page-hero page-hero-small">
+            <div class="container">
+                <div class="page-hero-content">
+                    <span class="page-label">Get in Touch</span>
+                    <h1>Let's talk about your next <span class="text-gradient">website or digital project</span>.</h1>
+                    <p class="page-description">
+                        Have a project in mind? We'd love to hear about it. 
+                        Send us a message and we'll get back to you within 1-2 business days.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section section-padding">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="business">Business / Company Name</label>
+                                <input type="text" id="business" name="business" placeholder="Your Company">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Interested In</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="web-design">Custom Website Design</option>
+                                    <option value="website-redesign">Website Redesign</option>
+                                    <option value="landing-page">Landing Page</option>
+                                    <option value="ai-integration">AI Integration</option>
+                                    <option value="automation">Automation Systems</option>
+                                    <option value="ongoing-support">Ongoing Support</option>
+                                    <option value="other">Other / Not Sure</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Estimated Budget</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="2500-4000">$2,500 - $4,000</option>
+                                    <option value="4000-8000">$4,000 - $8,000</option>
+                                    <option value="8000-15000">$8,000 - $15,000</option>
+                                    <option value="15000+">$15,000+</option>
+                                </select>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="message">Project Details</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us about your project, goals, timeline, and any specific requirements..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info-wrapper">
+                        <div class="contact-info-card">
+                            <h3>What to expect</h3>
+                            <ul class="expect-list">
+                                <li>
+                                    <span class="expect-icon">⏱️</span>
+                                    <div>
+                                        <strong>Quick Response</strong>
+                                        <span>We typically respond within 1-2 business days</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="expect-icon">🔍</span>
+                                    <div>
+                                        <strong>Discovery-First Approach</strong>
+                                        <span>We start by understanding your needs before proposing solutions</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="expect-icon">🤝</span>
+                                    <div>
+                                        <strong>Collaborative Process</strong>
+                                        <span>You'll be involved at every stage of the project</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="expect-icon">📋</span>
+                                    <div>
+                                        <strong>Clear Proposal</strong>
+                                        <span>Detailed scope, timeline, and pricing before we begin</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="contact-direct">
+                            <h3>Direct Contact</h3>
+                            <div class="direct-item">
+                                <span class="direct-icon">📧</span>
+                                <div>
+                                    <strong>Email</strong>
+                                    <a href="mailto:hello@parkertechlab.com">hello@parkertechlab.com</a>
+                                </div>
+                            </div>
+                            <div class="direct-item">
+                                <span class="direct-icon">📍</span>
+                                <div>
+                                    <strong>Location</strong>
+                                    <span>Remote / Worldwide</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-cta">
+                            <h3>Prefer a call?</h3>
+                            <p>Schedule a free 30-minute consultation to discuss your project.</p>
+                            <a href="mailto:hello@parkertechlab.com?subject=Consultation Request" class="btn btn-secondary">Request a Call</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ PREVIEW -->
+        <section class="faq-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">FAQ</span>
+                    <h2 class="section-title">Common <span class="text-gradient">questions</span></h2>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3 class="faq-question">What is your typical project timeline?</h3>
+                        <p class="faq-answer">
+                            Most website projects take 3-6 weeks from kickoff to launch, 
+                            depending on scope and complexity. Landing pages can be completed 
+                            in 1-2 weeks, while larger custom platforms may take 8-12 weeks.
+                        </p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">Do you work with businesses outside the US?</h3>
+                        <p class="faq-answer">
+                            Yes! We work with clients worldwide. All communication and meetings 
+                            are conducted remotely via video call, email, and project management tools.
+                        </p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">What information do you need to get started?</h3>
+                        <p class="faq-answer">
+                            We start with a discovery call to understand your goals, audience, 
+                            and requirements. After that, we'll provide a detailed proposal 
+                            and project plan before any work begins.
+                        </p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">Do you offer payment plans?</h3>
+                        <p class="faq-answer">
+                            Yes, we offer flexible payment structures. Most projects follow 
+                            a 50% deposit, 50% on completion model, but we can discuss 
+                            milestone-based payments for larger projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="cta-section section-padding">
+            <div class="container">
+                <div class="cta-wrapper">
+                    <h2>Ready to get started?</h2>
+                    <p>
+                        Take the first step toward a better digital presence. 
+                        We're here to help bring your vision to life.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="mailto:hello@parkertechlab.com" class="btn btn-primary">Send Us a Message</a>
+                        <a href="services.html" class="btn btn-outline">Explore Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">Parker Tech Lab</div>
+                    <p class="footer-description">
+                        A modern web design and development studio helping businesses 
+                        create better digital experiences through strategy, design, and technology.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Web Design</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">AI Integration</a></li>
+                        <li><a href="services.html">Automation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:hello@parkertechlab.com">Email Us</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2026 Parker Tech Lab. All rights reserved.
+                </p>
+                <div class="footer-social">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const html = document.documentElement;
+        
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+        
+        themeToggle.addEventListener('click', function() {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+        
+        function updateThemeIcon(theme) {
+            themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+        }
+
+        // Mobile menu toggle
+        document.querySelector('.nav-toggle')?.addEventListener('click', function() {
+            const menu = document.querySelector('.nav-menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Form submission handler
+        document.getElementById('contact-form')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add form submission logic here
+            alert('Thank you for your message! We will get back to you within 1-2 business days.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
