@@ -1,124 +1,97 @@
 <p align="center">
-  <h1 align="center">Parker Tech Lab</h1>
-  <p align="center">Modern Web Design • Automation • AI-Powered Experiences</p>
+  <img src="https://img.shields.io/badge/Parker%20Tech%20Lab-Digital%20Studio-2563EB?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Live-16A34A?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Deploy-GitHub%20Pages-111827?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Stack-HTML%20%7C%20CSS%20%7C%20JavaScript-0EA5A4?style=for-the-badge" />
 </p>
 
+<h1 align="center">Parker Tech Lab</h1>
 
-**Parker Tech Lab** is a modern digital studio focused on building high-quality websites, automation systems, and AI-powered experiences for businesses, creators, and brands.
+<p align="center">
+  <strong>Modern Web Design • Redesigns • Automation • AI-Ready Experiences</strong>
+</p>
 
-🔗 Live Site: https://bparker81597.github.io/ParkerTechLab-portfolio/
+<p align="center">
+  Parker Tech Lab is a modern digital studio focused on building polished websites,
+  thoughtful user experiences, and intelligent digital systems for brands, businesses, and creators.
+</p>
 
----
-
-## ✨ Overview
-
-Parker Tech Lab started as a technical portfolio and has evolved into a **client-focused agency experience**.
-
-This project represents a shift from showcasing development skills to delivering **real-world digital solutions**, including:
-
-* Custom website design
-* Website redesigns
-* Automation workflows
-* AI integrations
-* Modern, responsive user experiences
-
----
-
-## 🎯 Project Goals
-
-* Transition from a personal portfolio → agency-style website
-* Create a clean, professional, and conversion-focused layout
-* Showcase services and real-world use cases
-* Establish the foundation for Parker Tech Lab as a growing digital studio
+<p align="center">
+  <a href="https://bparker81597.github.io/ParkerTechLab-portfolio/">
+    <img src="https://img.shields.io/badge/View-Live%20Site-2563EB?style=for-the-badge&logo=google-chrome&logoColor=white" />
+  </a>
+  <a href="https://github.com/Bparker81597/ParkerTechLab-portfolio">
+    <img src="https://img.shields.io/badge/View-Repository-111827?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
 
 ---
 
-## 🧩 Features
+## Overview
 
-* Responsive design (desktop, tablet, mobile)
-* Modern UI/UX layout
-* Clean navigation and structured sections
-* Service-focused presentation
-* Project and case study showcase
-* Professional branding and visual identity
+This project began as a technical portfolio and evolved into a more refined, client-facing digital studio presence.
 
----
+The goal was to create a site that feels more aligned with a modern agency than a traditional developer portfolio — balancing clean design, strategic structure, and strong branding with technical capability.
 
-## 🛠️ Tech Stack
-
-* HTML5
-* CSS3
-* Vanilla JavaScript
-* GitHub Pages (deployment)
+Parker Tech Lab represents a shift toward building not only polished frontend experiences, but also scalable digital solutions through redesign, automation, and AI-ready thinking.
 
 ---
 
-## 📁 Project Structure
+## Live Preview
+
+**Website:**  
+[https://bparker81597.github.io/ParkerTechLab-portfolio/](https://bparker81597.github.io/ParkerTechLab-portfolio/)
+
+---
+
+## Core Focus
+
+- Custom website design
+- Website redesigns
+- Modern responsive frontend development
+- Automation-focused digital workflows
+- AI-ready digital experiences
+- Strong visual presentation with clean UX structure
+
+---
+
+## Tech Stack
+
+<p>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111827" />
+  <img src="https://img.shields.io/badge/GitHub%20Pages-121013?style=flat-square&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Responsive%20Design-0EA5A4?style=flat-square" />
+  <img src="https://img.shields.io/badge/UI%2FUX-2563EB?style=flat-square" />
+</p>
+
+---
+
+## Features
+
+- Responsive layout across desktop, tablet, and mobile
+- Professional agency-inspired structure
+- Clear service and project presentation
+- Modern section-based UI
+- Strong visual hierarchy
+- Branded digital studio identity
+- GitHub Pages deployment
+
+---
+
+## Project Structure
 
 ```bash
-technical-portfolio/
+ParkerTechLab-portfolio/
 │
 ├── index.html
+├── README.md
 ├── css/
 │   └── styles.css
 ├── js/
 │   └── script.js
 ├── assets/
 │   ├── images/
-│   └── icons/
-```
-
----
-
-## 🧠 Future Improvements
-
-* Add full multi-page structure (Services, Work, About, Contact)
-* Integrate AI-powered features and tools
-* Add real client case studies
-* Improve animations and micro-interactions
-* Connect backend services (Firebase / APIs)
-* Add CMS or dynamic content support
-
----
-
-## 💡 Vision
-
-Parker Tech Lab is growing into a **full-service digital agency** focused on:
-
-* building modern, scalable websites
-* designing thoughtful user experiences
-* integrating automation and AI into everyday business workflows
-
----
-
-## 🤝 Let’s Connect
-
-If you're looking to:
-
-* redesign your website
-* build a new digital experience
-* explore automation or AI tools
-
-I’d love to connect.
-
-📩 Reach out via LinkedIn or through the contact section on the site.
-
----
-
-## 🪪 Author
-
-**Brittany Parker**
-Founder, Parker Tech Lab
-
----
-
-## ⭐ Support
-
-If you like this project, feel free to:
-
-* ⭐ star the repo
-* share feedback
-* connect and collaborate
-
----
-
+│   ├── icons/
+│   └── branding/
