@@ -710,6 +710,68 @@ img {
     gap: 0.75rem;
 }
 
+/* Featured Project Enhancements */
+.featured-project {
+    grid-column: 1 / -1;
+    border: 2px solid var(--accent-blue);
+    position: relative;
+}
+
+.featured-project::before {
+    content: 'Featured Project';
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--gradient-primary);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.375rem 0.75rem;
+    border-radius: 100px;
+    z-index: 10;
+}
+
+.featured-project .project-placeholder {
+    background: linear-gradient(135deg, #1e40af 0%, #0d9488 100%);
+}
+
+.project-highlights {
+    list-style: none;
+    margin: 1rem 0 1.5rem;
+    padding: 0;
+}
+
+.project-highlights li {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    padding: 0.375rem 0;
+    padding-left: 1.25rem;
+    position: relative;
+}
+
+.project-highlights li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent-teal);
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.project-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-sm {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+}
+
 /* ========================================
    WHY US SECTION
    ======================================== */
