@@ -2,63 +2,70 @@
 <html class="scroll-smooth" lang="en">
 <head>
     <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>ParkerTechLabs | Digital Engineering Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Parker Tech Lab - A modern web design, development, and AI integration studio helping businesses create better digital experiences."/>
+    <title>Parker Tech Lab | Web Design & Development Agency</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Epilogue:wght@300;400;500;600&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Epilogue:wght@300;400;500;600&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
           extend: {
             colors: {
-              "tertiary-fixed": "#ffddb9",
+              "primary": "#006875",
               "primary-container": "#06c5db",
-              "surface-container": "#e8eff1",
-              "on-tertiary-fixed": "#2b1700",
+              "primary-fixed": "#9bf0ff",
+              "primary-fixed-dim": "#3bd9ef",
+              "on-primary": "#ffffff",
+              "on-primary-container": "#004d56",
+              "on-primary-fixed": "#001f24",
+              "on-primary-fixed-variant": "#004f58",
+              "secondary": "#36656e",
+              "secondary-container": "#baebf5",
+              "secondary-fixed": "#baebf5",
+              "secondary-fixed-dim": "#9ecfd8",
+              "on-secondary": "#ffffff",
+              "on-secondary-container": "#3c6b74",
+              "on-secondary-fixed": "#001f24",
+              "on-secondary-fixed-variant": "#1b4d56",
               "tertiary": "#865300",
-              "on-tertiary": "#ffffff",
-              "surface-container-low": "#eef5f7",
+              "tertiary-container": "#f1a33a",
+              "tertiary-fixed": "#ffddb9",
               "tertiary-fixed-dim": "#ffb961",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-container": "#643d00",
+              "on-tertiary-fixed": "#2b1700",
+              "on-tertiary-fixed-variant": "#663e00",
+              "error": "#ba1a1a",
+              "error-container": "#ffdad6",
               "on-error": "#ffffff",
+              "on-error-container": "#93000a",
+              "background": "#f4fafd",
+              "on-background": "#161d1e",
+              "surface": "#f4fafd",
+              "surface-dim": "#d4dbdd",
+              "surface-bright": "#f4fafd",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#eef5f7",
+              "surface-container": "#e8eff1",
+              "surface-container-high": "#e3e9eb",
+              "surface-container-highest": "#dde4e6",
               "surface-variant": "#dde4e6",
               "on-surface": "#161d1e",
-              "surface-tint": "#006875",
-              "on-primary-container": "#004d56",
-              "on-primary": "#ffffff",
-              "error": "#ba1a1a",
-              "on-secondary-fixed-variant": "#1b4d56",
-              "background": "#f4fafd",
-              "on-secondary-fixed": "#001f24",
-              "secondary-container": "#baebf5",
-              "on-secondary": "#ffffff",
-              "error-container": "#ffdad6",
-              "surface-container-high": "#e3e9eb",
-              "inverse-surface": "#2b3233",
-              "primary-fixed-dim": "#3bd9ef",
-              "tertiary-container": "#f1a33a",
-              "on-tertiary-fixed-variant": "#663e00",
-              "inverse-primary": "#3bd9ef",
-              "secondary": "#36656e",
-              "surface-bright": "#f4fafd",
               "on-surface-variant": "#3c494c",
-              "on-primary-fixed": "#001f24",
-              "on-error-container": "#93000a",
-              "on-background": "#161d1e",
-              "secondary-fixed-dim": "#9ecfd8",
-              "surface-container-lowest": "#ffffff",
-              "on-secondary-container": "#3c6b74",
+              "outline": "#6c797c",
+              "outline-variant": "#bbc9cc",
+              "inverse-surface": "#2b3233",
               "inverse-on-surface": "#ebf2f4",
-              "primary": "#006875",
-              "surface-container-highest": "#dde4e6",
-              "surface-dim": "#d4dbdd",
-              "primary-fixed": "#9bf0ff"
+              "inverse-primary": "#3bd9ef",
+              "surface-tint": "#006875"
             },
             fontFamily: {
-              "headline": ["Plus Jakarta Sans"],
-              "body": ["Epilogue"],
-              "label": ["Inter"]
+              "headline": ["Plus Jakarta Sans", "sans-serif"],
+              "body": ["Epilogue", "sans-serif"],
+              "label": ["Inter", "sans-serif"]
             },
             borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
           },
@@ -80,17 +87,23 @@
 <!-- Top Navigation Bar -->
 <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-slate-100 dark:border-slate-900 shadow-sm">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <a class="text-2xl font-black text-cyan-500 dark:text-cyan-400 tracking-tight font-headline" href="#">
-            ParkerTechLabs
+        <a class="text-2xl font-black text-cyan-600 dark:text-cyan-400 tracking-tight font-headline" href="#">
+            Parker Tech <span class="text-primary">Lab</span>
         </a>
         <div class="hidden md:flex items-center gap-8 font-headline font-semibold">
-            <a class="text-slate-600 dark:text-slate-400 hover:text-cyan-500 dark:hover:text-cyan-300 transition-colors" href="#services">Services</a>
-            <a class="text-slate-600 dark:text-slate-400 hover:text-cyan-500 dark:hover:text-cyan-300 transition-colors" href="#process">Process</a>
-            <a class="text-slate-600 dark:text-slate-400 hover:text-cyan-500 dark:hover:text-cyan-300 transition-colors" href="#work">Work</a>
+            <a class="text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors" href="#services">Services</a>
+            <a class="text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors" href="#work">Work</a>
+            <a class="text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors" href="#about">About</a>
+            <a class="text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors" href="#contact">Contact</a>
         </div>
-        <button class="bg-primary px-6 py-2.5 rounded-lg text-white font-headline font-semibold hover:bg-primary/90 active:scale-95 duration-200 ease-in-out">
-            Start a Project
-        </button>
+        <div class="flex items-center gap-4">
+            <button class="bg-primary px-6 py-2.5 rounded-lg text-white font-headline font-semibold hover:bg-primary/90 active:scale-95 duration-200 ease-in-out hidden sm:block">
+                Start a Project
+            </button>
+            <button id="theme-toggle" class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center hover:bg-surface-variant transition-colors" aria-label="Toggle theme">
+                <span class="material-symbols-outlined" id="theme-icon">dark_mode</span>
+            </button>
+        </div>
     </div>
 </nav>
 <main class="pt-20">
@@ -103,67 +116,59 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div class="max-w-2xl">
-                    <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold font-label tracking-wider mb-6">NEXT-GEN DIGITAL ENGINEERING</span>
+                    <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold font-label tracking-wider mb-6">
+                        <span class="inline-block w-2 h-2 rounded-full bg-green-500 mr-2 animate-pulse"></span>
+                        Available for new projects
+                    </span>
                     <h1 class="text-5xl md:text-7xl font-extrabold font-headline leading-[1.1] mb-8 tracking-tight text-on-surface">
-                        We Build <span class="text-primary">Digital Engines</span> for Modern Business
+                        We Build Modern Websites &amp; <span class="text-primary">Digital Systems</span>
                     </h1>
                     <p class="text-xl text-on-surface-variant leading-relaxed mb-10">
-                        From bespoke web applications to automated workflows, we engineer digital solutions that drive measurable ROI.
+                        Parker Tech Lab is a boutique web design and development studio.
+                        We craft strategic websites, seamless redesigns, and intelligent
+                        automation solutions that help businesses grow.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <button class="bg-primary text-white px-8 py-4 rounded-lg font-headline font-bold text-lg hover:shadow-xl hover:shadow-primary/20 transition-all active:scale-95">
-                            Start a Project
-                        </button>
-                        <button class="bg-surface-container-highest text-on-surface-variant px-8 py-4 rounded-lg font-headline font-bold text-lg hover:bg-surface-variant transition-all flex items-center justify-center gap-2">
-                            View Our Portfolio
+                        <a href="#services" class="bg-primary text-white px-8 py-4 rounded-lg font-headline font-bold text-lg hover:shadow-xl hover:shadow-primary/20 transition-all active:scale-95 text-center">
+                            View Services
+                        </a>
+                        <a href="#work" class="bg-surface-container-highest text-on-surface-variant px-8 py-4 rounded-lg font-headline font-bold text-lg hover:bg-surface-variant transition-all flex items-center justify-center gap-2">
+                            See Our Work
                             <span class="material-symbols-outlined">arrow_forward</span>
-                        </button>
+                        </a>
+                    </div>
+                    <div class="mt-10 pt-6 border-t border-outline-variant/30">
+                        <p class="text-sm font-label font-medium text-on-surface-variant">Web Design • Redesigns • Automation • AI Integrations</p>
                     </div>
                 </div>
                 <div class="relative">
-                    <div class="aspect-square rounded-2xl overflow-hidden shadow-2xl">
-                        <img class="w-full h-full object-cover" alt="Modern collaborative tech workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD1fyekekeM0carjdmdVVK5hgF0mGNfC9xUMFH0EJUBtwJPRh6sqZW8-5676ZjHptYGKW2S8bpW_RE6otVFTSJHfYxyg_JYLW8pX__nZ1TEhcgzxyJJYogSN74dGGsxIyrVR7zjKyCXZBHZYjkNI8mPbCIdZUX1_AS1XbbWYqv0F0fcMQWQmC4tPzm4sy1PXO7fZhhFhwGQF0EqPErbIyEH_T198iq7Kj_T6gRjuIFKizfffqMq-unMeZ-EDNOSY54fI_9BvAo7FY"/>
+                    <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-outline-variant/20">
+                        <img class="w-full h-full object-cover" alt="Parker Tech Lab Logo" src="/images/logo-full.png"/>
                     </div>
-                    <!-- Floating Tech Card -->
-                    <div class="absolute -bottom-8 -left-8 glass-morphism p-6 rounded-xl border border-white/20 shadow-xl hidden md:block">
-                        <div class="flex items-center gap-4 mb-3">
-                            <div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center text-white">
-                                <span class="material-symbols-outlined">rocket_launch</span>
+                    <!-- Floating Stats Card 1 -->
+                    <div class="absolute -bottom-6 -left-6 glass-morphism p-5 rounded-xl border border-white/20 shadow-xl hidden md:block">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary-container/10 flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-xl">bolt</span>
                             </div>
                             <div>
-                                <div class="text-sm font-label font-bold text-on-surface">Active Projects</div>
-                                <div class="text-xs text-on-surface-variant">Global Operations</div>
+                                <div class="text-sm font-label font-bold text-on-surface">Fast Delivery</div>
+                                <div class="text-xs text-on-surface-variant">2-4 week timelines</div>
                             </div>
                         </div>
-                        <div class="h-2 w-full bg-surface-container-high rounded-full overflow-hidden">
-                            <div class="h-full bg-primary w-[85%] rounded-full"></div>
+                    </div>
+                    <!-- Floating Stats Card 2 -->
+                    <div class="absolute -top-4 -right-4 glass-morphism p-5 rounded-xl border border-white/20 shadow-xl hidden md:block">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-tertiary-container/10 flex items-center justify-center text-tertiary">
+                                <span class="material-symbols-outlined text-xl">check_circle</span>
+                            </div>
+                            <div>
+                                <div class="text-sm font-label font-bold text-on-surface">50+ Projects</div>
+                                <div class="text-xs text-on-surface-variant">Successfully launched</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trust Indicators -->
-    <section class="py-12 bg-white/50 border-y border-outline-variant/30">
-        <div class="max-w-7xl mx-auto px-6">
-            <p class="text-center text-sm font-label font-bold text-outline uppercase tracking-widest mb-8">Trusted by Innovation Leaders</p>
-            <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                <div class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-4xl">vocal_soft</span>
-                    <span class="font-headline font-bold text-xl">CloudScale</span>
-                </div>
-                <div class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-4xl">dataset</span>
-                    <span class="font-headline font-bold text-xl">Infrabit</span>
-                </div>
-                <div class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-4xl">stream</span>
-                    <span class="font-headline font-bold text-xl">NexusFlow</span>
-                </div>
-                <div class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-4xl">polymer</span>
-                    <span class="font-headline font-bold text-xl">SynthMatrix</span>
                 </div>
             </div>
         </div>
@@ -173,58 +178,243 @@
     <section class="py-24 bg-surface-container-low" id="services">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-black font-headline text-on-surface mb-4">Our Expertise</h2>
-                <p class="text-on-surface-variant text-lg max-w-2xl mx-auto">We combine technical rigour with strategic vision to deliver superior digital products.</p>
+                <span class="text-sm font-label font-bold text-primary uppercase tracking-widest">Our Services</span>
+                <h2 class="text-4xl md:text-5xl font-black font-headline text-on-surface mt-3 mb-4">Everything You Need to <span class="text-primary">Dominate Online</span></h2>
+                <p class="text-on-surface-variant text-lg max-w-2xl mx-auto">From stunning design to intelligent automation, we've got your digital presence covered.</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Custom Web App -->
-                <div class="md:col-span-2 group relative overflow-hidden bg-white p-8 rounded-xl shadow-sm border border-outline-variant/20 hover:border-primary/50 transition-all">
-                    <div class="relative z-10 flex flex-col h-full justify-between">
-                        <div>
-                            <div class="w-14 h-14 rounded-lg bg-primary-container/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span class="material-symbols-outlined text-3xl">web</span>
-                            </div>
-                            <h3 class="text-2xl font-bold font-headline mb-4">Custom Web Application Design</h3>
-                            <p class="text-on-surface-variant leading-relaxed max-w-lg">
-                                High-end, responsive designs that solve business problems. We build custom dashboards, internal tools, and customer-facing platforms with a focus on usability and conversion.
-                            </p>
-                        </div>
-                        <div class="mt-8 flex items-center gap-2 font-label font-bold text-primary group-hover:translate-x-2 transition-transform">
-                            Explore Capabilities <span class="material-symbols-outlined">trending_flat</span>
-                        </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="group relative overflow-hidden bg-white p-8 rounded-xl shadow-sm border border-outline-variant/20 hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl">
+                    <div class="w-14 h-14 rounded-lg bg-primary-container/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined text-3xl">palette</span>
                     </div>
-                    <div class="absolute bottom-0 right-0 w-64 h-64 opacity-5 group-hover:opacity-10 transition-opacity">
-                        <span class="material-symbols-outlined text-[12rem]">code</span>
-                    </div>
+                    <h3 class="text-xl font-bold font-headline mb-3">Custom Website Design</h3>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        Beautiful, conversion-focused websites designed to captivate your audience
+                        and reflect your brand's unique identity.
+                    </p>
                 </div>
-                <!-- AI & Automation -->
-                <div class="group relative overflow-hidden bg-white p-8 rounded-xl shadow-sm border border-outline-variant/20 hover:border-primary/50 transition-all">
+                <!-- Service 2 -->
+                <div class="group relative overflow-hidden bg-white p-8 rounded-xl shadow-sm border border-outline-variant/20 hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl">
+                    <div class="w-14 h-14 rounded-lg bg-secondary-container/20 flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined text-3xl">refresh</span>
+                    </div>
+                    <h3 class="text-xl font-bold font-headline mb-3">Website Redesign</h3>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        Transform your outdated website into a modern, high-performing asset
+                        that drives results and impresses visitors.
+                    </p>
+                </div>
+                <!-- Service 3 -->
+                <div class="group relative overflow-hidden bg-white p-8 rounded-xl shadow-sm border border-outline-variant/20 hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl">
                     <div class="w-14 h-14 rounded-lg bg-tertiary-container/10 flex items-center justify-center text-tertiary mb-6 group-hover:bg-tertiary group-hover:text-white transition-colors">
                         <span class="material-symbols-outlined text-3xl">smart_toy</span>
                     </div>
-                    <h3 class="text-2xl font-bold font-headline mb-4">AI &amp; Automation Integration</h3>
+                    <h3 class="text-xl font-bold font-headline mb-3">AI Integrations</h3>
                     <p class="text-on-surface-variant leading-relaxed">
-                        Streamlining operations with intelligent systems that learn and adapt to your business needs.
+                        Smart features like chatbots, automated responses, and intelligent
+                        content systems that work 24/7 for your business.
                     </p>
                 </div>
-                <!-- Cloud-Native -->
-                <div class="group relative overflow-hidden bg-white p-8 rounded-xl shadow-sm border border-outline-variant/20 hover:border-primary/50 transition-all">
-                    <div class="w-14 h-14 rounded-lg bg-secondary-container/20 flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
-                        <span class="material-symbols-outlined text-3xl">cloud_done</span>
+                <!-- Service 4 -->
+                <div class="group relative overflow-hidden bg-white p-8 rounded-xl shadow-sm border border-outline-variant/20 hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl">
+                    <div class="w-14 h-14 rounded-lg bg-primary-container/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined text-3xl">auto_awesome</span>
                     </div>
-                    <h3 class="text-2xl font-bold font-headline mb-4">Cloud-Native Architecture</h3>
+                    <h3 class="text-xl font-bold font-headline mb-3">Automation Systems</h3>
                     <p class="text-on-surface-variant leading-relaxed">
-                        Scalable, secure, and future-proof digital foundations built on industry-leading infrastructure.
+                        Eliminate manual tasks with smart integrations and automated
+                        workflows that save time and reduce errors.
                     </p>
                 </div>
-                <!-- Strategic Vision -->
-                <div class="md:col-span-2 relative h-48 rounded-xl overflow-hidden">
-                    <img class="w-full h-full object-cover" alt="Digital strategy data visualization" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkXH_N_PnrTQP5rzhW7_tk6WqBChMTpxCNyPrLtoUSOE6ou9f47xmXtpR5G8oSDOaZcmPCIWMvVSVDS8KB6wczlQx_CSyP-s8qqxxsWGY3tM7DFseBhuvIjCKopCg02UWAggA243JiVMhyYmR-VOShpX73HoidChDZh2tKIu6LYv4qfpiWQNWYf--0KzNh_xHlfQhPkbqCd-MB1kmK_V9Xx5BlBc5-KG4IjEjOu1VlCdi8m4m261u6XASvhQotCg-mi-WYAiFZ0P4"/>
-                    <div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent flex items-center p-8">
-                        <div class="text-white max-w-md">
-                            <h4 class="text-xl font-bold font-headline mb-2">Measurable Growth</h4>
-                            <p class="text-sm opacity-90">Every line of code is written with your bottom line in mind. We build for performance and ROI.</p>
+                <!-- Service 5 -->
+                <div class="group relative overflow-hidden bg-white p-8 rounded-xl shadow-sm border border-outline-variant/20 hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl">
+                    <div class="w-14 h-14 rounded-lg bg-secondary-container/20 flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined text-3xl">description</span>
+                    </div>
+                    <h3 class="text-xl font-bold font-headline mb-3">Landing Pages</h3>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        High-converting landing pages designed to capture leads,
+                        promote offers, and drive specific actions.
+                    </p>
+                </div>
+                <!-- Service 6 -->
+                <div class="group relative overflow-hidden bg-white p-8 rounded-xl shadow-sm border border-outline-variant/20 hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl">
+                    <div class="w-14 h-14 rounded-lg bg-tertiary-container/10 flex items-center justify-center text-tertiary mb-6 group-hover:bg-tertiary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined text-3xl">support_agent</span>
+                    </div>
+                    <h3 class="text-xl font-bold font-headline mb-3">Ongoing Support</h3>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        Continuous maintenance, updates, and improvements to keep
+                        your website secure, fast, and up-to-date.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Work Section -->
+    <section class="py-24 bg-white" id="work">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-sm font-label font-bold text-primary uppercase tracking-widest">Featured Work</span>
+                <h2 class="text-4xl md:text-5xl font-black font-headline text-on-surface mt-3 mb-4">Recent <span class="text-primary">Projects</span></h2>
+                <p class="text-on-surface-variant text-lg max-w-2xl mx-auto">Real results for real clients. Explore some of our recent work.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 - Featured -->
+                <div class="md:col-span-2 lg:col-span-2 group relative overflow-hidden bg-surface-container-low rounded-2xl border-2 border-primary/30 hover:border-primary transition-all">
+                    <div class="absolute top-4 right-4 z-10 px-3 py-1 bg-gradient-to-r from-primary to-primary-container text-white text-xs font-bold font-label uppercase tracking-wider rounded-full">Featured Project</div>
+                    <div class="aspect-video bg-gradient-to-br from-blue-600 to-teal-500 flex items-center justify-center text-6xl">
+                        📊
+                    </div>
+                    <div class="p-8">
+                        <span class="text-xs font-label font-bold text-primary uppercase tracking-wider">Fintech / Dashboard UI / Web App Concept</span>
+                        <h3 class="text-2xl font-bold font-headline mt-2 mb-3">Smart Financial Tool</h3>
+                        <p class="text-on-surface-variant leading-relaxed mb-4">
+                            A finance-focused web app concept built to simplify personal money management
+                            through a clean dashboard experience, responsive design, and scalable frontend structure.
+                        </p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-start gap-2 text-sm text-on-surface-variant">
+                                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Responsive dashboard-style layout
+                            </li>
+                            <li class="flex items-start gap-2 text-sm text-on-surface-variant">
+                                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Clean financial data presentation
+                            </li>
+                            <li class="flex items-start gap-2 text-sm text-on-surface-variant">
+                                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Built with modern frontend structure
+                            </li>
+                            <li class="flex items-start gap-2 text-sm text-on-surface-variant">
+                                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Designed for future scalability and integrations
+                            </li>
+                        </ul>
+                        <div class="flex items-center gap-4">
+                            <a href="https://bparker81597.github.io/smart-finance-dashboard/" class="bg-primary text-white px-5 py-2.5 rounded-lg font-headline font-semibold text-sm hover:bg-primary/90 transition-all">Live Demo</a>
+                            <a href="https://github.com/Bparker81597/smart-finance-dashboard" class="text-primary font-label font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                                View Code <span class="material-symbols-outlined text-base">arrow_forward</span>
+                            </a>
                         </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="group relative overflow-hidden bg-surface-container-low rounded-2xl border border-outline-variant/20 hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl">
+                    <div class="aspect-video bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-6xl">
+                        💎
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-label font-bold text-primary uppercase tracking-wider">E-commerce</span>
+                        <h3 class="text-xl font-bold font-headline mt-2 mb-3">Rubbed In Diamonds</h3>
+                        <p class="text-on-surface-variant leading-relaxed mb-4">
+                            High-end e-commerce architecture with organic UI design
+                            built for luxury shopping experiences.
+                        </p>
+                        <a href="https://bparker81597.github.io/rubbed-in-diamonds/" class="text-primary font-label font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                            View Case Study <span class="material-symbols-outlined text-base">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="group relative overflow-hidden bg-surface-container-low rounded-2xl border border-outline-variant/20 hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl">
+                    <div class="aspect-video bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center text-6xl">
+                        🚀
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-label font-bold text-primary uppercase tracking-wider">SaaS Platform</span>
+                        <h3 class="text-xl font-bold font-headline mt-2 mb-3">AutonateAI</h3>
+                        <p class="text-on-surface-variant leading-relaxed mb-4">
+                            Central orchestration engine for developer toolchains
+                            with AI automation and sub-100ms response times.
+                        </p>
+                        <a href="#" class="text-primary font-label font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                            View Case Study <span class="material-symbols-outlined text-base">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="group relative overflow-hidden bg-surface-container-low rounded-2xl border border-outline-variant/20 hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl">
+                    <div class="aspect-video bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center text-6xl">
+                        ⚡
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-label font-bold text-primary uppercase tracking-wider">Automation</span>
+                        <h3 class="text-xl font-bold font-headline mt-2 mb-3">CRM Integration</h3>
+                        <p class="text-on-surface-variant leading-relaxed mb-4">
+                            Bespoke middleware connecting SaaS platforms for
+                            automated lead management and data sync.
+                        </p>
+                        <a href="#" class="text-primary font-label font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                            View Case Study <span class="material-symbols-outlined text-base">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="py-24 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-sm font-label font-bold text-primary uppercase tracking-widest">Why Parker Tech Lab</span>
+                <h2 class="text-4xl md:text-5xl font-black font-headline text-on-surface mt-3 mb-4">The <span class="text-primary">Difference</span></h2>
+                <p class="text-on-surface-variant text-lg max-w-2xl mx-auto">What sets us apart from other agencies.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="flex gap-4 p-6 bg-white rounded-xl border border-outline-variant/20">
+                    <div class="w-12 h-12 rounded-lg bg-primary-container/10 flex items-center justify-center text-primary flex-shrink-0">
+                        <span class="material-symbols-outlined text-2xl">insights</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold font-headline mb-2">Strategy-Led Design</h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">
+                            Every decision is backed by research and strategy.
+                            We don't just make things pretty—we make them work.
+                        </p>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div class="flex gap-4 p-6 bg-white rounded-xl border border-outline-variant/20">
+                    <div class="w-12 h-12 rounded-lg bg-secondary-container/20 flex items-center justify-center text-secondary flex-shrink-0">
+                        <span class="material-symbols-outlined text-2xl">code</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold font-headline mb-2">Modern Development</h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">
+                            Clean, performant code built on modern frameworks.
+                            Fast, secure, and scalable by default.
+                        </p>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div class="flex gap-4 p-6 bg-white rounded-xl border border-outline-variant/20">
+                    <div class="w-12 h-12 rounded-lg bg-tertiary-container/10 flex items-center justify-center text-tertiary flex-shrink-0">
+                        <span class="material-symbols-outlined text-2xl">psychology</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold font-headline mb-2">AI-Ready Solutions</h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">
+                            Future-proof your business with intelligent features
+                            and automation ready to scale with you.
+                        </p>
+                    </div>
+                </div>
+                <!-- Feature 4 -->
+                <div class="flex gap-4 p-6 bg-white rounded-xl border border-outline-variant/20">
+                    <div class="w-12 h-12 rounded-lg bg-primary-container/10 flex items-center justify-center text-primary flex-shrink-0">
+                        <span class="material-symbols-outlined text-2xl">touch_app</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold font-headline mb-2">Thoughtful UX</h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">
+                            Every interaction is crafted with care.
+                            We design experiences that delight and convert.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -234,84 +424,181 @@
     <!-- Process Section -->
     <section class="py-24 bg-white" id="process">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-end gap-8 mb-20">
-                <div class="max-w-2xl">
-                    <h2 class="text-4xl md:text-5xl font-black font-headline text-on-surface mb-6">The ParkerTechLabs Method</h2>
-                    <p class="text-on-surface-variant text-lg">A systematic approach to engineering excellence. We don't just build features; we architect solutions.</p>
-                </div>
+            <div class="text-center mb-16">
+                <span class="text-sm font-label font-bold text-primary uppercase tracking-widest">Our Process</span>
+                <h2 class="text-4xl md:text-5xl font-black font-headline text-on-surface mt-3 mb-4">How We <span class="text-primary">Work</span></h2>
+                <p class="text-on-surface-variant text-lg max-w-2xl mx-auto">A proven workflow that delivers results on time, every time.</p>
             </div>
-            <div class="grid md:grid-cols-4 gap-8 relative">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
                 <!-- Connection Line -->
-                <div class="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-outline-variant/30 -z-0"></div>
-                <!-- Discovery -->
-                <div class="relative z-10">
-                    <div class="w-12 h-12 rounded-full bg-white border-2 border-primary flex items-center justify-center font-headline font-bold text-primary mb-6">1</div>
-                    <h4 class="text-xl font-bold font-headline mb-3">Discovery</h4>
-                    <p class="text-on-surface-variant text-sm leading-relaxed">We deep-dive into your business model, identifying technical bottlenecks and growth opportunities.</p>
+                <div class="hidden lg:block absolute top-8 left-0 w-full h-0.5 bg-gradient-to-r from-primary via-primary-container to-primary opacity-30"></div>
+                <!-- Step 1 -->
+                <div class="relative">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-primary-container flex items-center justify-center font-headline font-bold text-white text-xl mb-6 shadow-lg">1</div>
+                    <h4 class="text-xl font-bold font-headline mb-3">Discover</h4>
+                    <p class="text-on-surface-variant text-sm leading-relaxed">We dive deep into your business, goals, and audience to create a strategic roadmap for success.</p>
                 </div>
-                <!-- Strategy -->
-                <div class="relative z-10">
-                    <div class="w-12 h-12 rounded-full bg-white border-2 border-primary flex items-center justify-center font-headline font-bold text-primary mb-6">2</div>
-                    <h4 class="text-xl font-bold font-headline mb-3">Strategy</h4>
-                    <p class="text-on-surface-variant text-sm leading-relaxed">Mapping out the architectural blueprint and defining the technical roadmap for success.</p>
+                <!-- Step 2 -->
+                <div class="relative">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-primary-container flex items-center justify-center font-headline font-bold text-white text-xl mb-6 shadow-lg">2</div>
+                    <h4 class="text-xl font-bold font-headline mb-3">Design</h4>
+                    <p class="text-on-surface-variant text-sm leading-relaxed">Our designers craft stunning visuals that align with your brand and resonate with your audience.</p>
                 </div>
-                <!-- Execution -->
-                <div class="relative z-10">
-                    <div class="w-12 h-12 rounded-full bg-white border-2 border-primary flex items-center justify-center font-headline font-bold text-primary mb-6">3</div>
-                    <h4 class="text-xl font-bold font-headline mb-3">Execution</h4>
-                    <p class="text-on-surface-variant text-sm leading-relaxed">Iterative, agile development with constant feedback loops and rigorous testing standards.</p>
+                <!-- Step 3 -->
+                <div class="relative">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-primary-container flex items-center justify-center font-headline font-bold text-white text-xl mb-6 shadow-lg">3</div>
+                    <h4 class="text-xl font-bold font-headline mb-3">Build</h4>
+                    <p class="text-on-surface-variant text-sm leading-relaxed">Clean, performant code brings the design to life with modern technologies and best practices.</p>
                 </div>
-                <!-- Launch -->
-                <div class="relative z-10">
-                    <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center font-headline font-bold text-white mb-6">4</div>
+                <!-- Step 4 -->
+                <div class="relative">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-primary-container flex items-center justify-center font-headline font-bold text-white text-xl mb-6 shadow-lg">4</div>
                     <h4 class="text-xl font-bold font-headline mb-3">Launch</h4>
-                    <p class="text-on-surface-variant text-sm leading-relaxed">Seamless deployment and scaling, followed by continuous optimization and support.</p>
+                    <p class="text-on-surface-variant text-sm leading-relaxed">After thorough testing, we launch your site and provide ongoing support for continuous growth.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Final CTA Section -->
-    <section class="py-24 bg-primary">
-        <div class="max-w-4xl mx-auto px-6 text-center text-white">
-            <h2 class="text-4xl md:text-5xl font-black font-headline mb-8">Ready to build something remarkable?</h2>
-            <p class="text-xl opacity-90 mb-12">Join the dozens of forward-thinking companies scaling with ParkerTechLabs' digital engines.</p>
+    <!-- About Section -->
+    <section class="py-24 bg-surface-container-low" id="about">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border border-outline-variant/20">
+                        <img class="w-full h-full object-cover" alt="Brittany Parker, Founder of Parker Tech Lab" src="/images/brittany-parker.png"/>
+                    </div>
+                    <!-- Photo Aura Effect -->
+                    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-primary/20 via-primary-container/10 to-tertiary-container/20 blur-3xl rounded-full transform scale-110"></div>
+                </div>
+                <div>
+                    <span class="text-sm font-label font-bold text-primary uppercase tracking-widest">About the Agency</span>
+                    <h3 class="text-3xl font-bold font-headline mt-4 mb-6">Founded on the belief that great design meets intelligent technology.</h3>
+                    <p class="text-on-surface-variant leading-relaxed mb-6">
+                        Parker Tech Lab was born from a simple idea: businesses deserve websites
+                        that are both beautiful and functional. Too many agencies focus on one
+                        at the expense of the other.
+                    </p>
+                    <p class="text-on-surface-variant leading-relaxed mb-6">
+                        Led by founder Brittany Parker, our boutique studio combines strategic
+                        design thinking with technical expertise to create digital experiences
+                        that drive real business results. We're not just developers—we're
+                        partners in your growth.
+                    </p>
+                    <p class="text-on-surface-variant leading-relaxed mb-8">
+                        Whether you need a complete website overhaul, a fresh brand presence,
+                        or intelligent automation to streamline operations, we bring the same
+                        level of care and expertise to every project.
+                    </p>
+                    <div class="pt-8 border-t border-outline-variant/30">
+                        <div class="font-headline font-bold text-lg text-on-surface">Brittany Parker</div>
+                        <div class="text-sm text-on-surface-variant mt-1">Founder &amp; Lead Developer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-gradient-to-br from-primary via-primary-container to-primary" id="contact">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-black font-headline text-white mb-6">Ready to Modernize Your Website?</h2>
+            <p class="text-xl text-white/90 mb-10">Let's build something strategic, polished, and built to grow. Get a free consultation and project estimate.</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <button class="bg-white text-primary px-10 py-5 rounded-lg font-headline font-bold text-lg hover:bg-surface-container-low transition-all active:scale-95 shadow-xl">
-                    Get Started Today
-                </button>
-                <button class="bg-primary-fixed-dim/20 border border-white/30 text-white px-10 py-5 rounded-lg font-headline font-bold text-lg hover:bg-primary-fixed-dim/30 transition-all">
-                    Talk to an Architect
-                </button>
+                <a href="#contact" class="bg-white text-primary px-10 py-5 rounded-lg font-headline font-bold text-lg hover:bg-surface-container-low transition-all active:scale-95 shadow-xl">
+                    Start a Project
+                </a>
+                <a href="mailto:hello@parkertechlab.com" class="bg-white/10 border border-white/30 text-white px-10 py-5 rounded-lg font-headline font-bold text-lg hover:bg-white/20 transition-all">
+                    Contact Us
+                </a>
             </div>
         </div>
     </section>
 </main>
 
 <!-- Footer -->
-<footer class="bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
-    <div class="max-w-7xl mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
-        <div class="flex flex-col gap-2 items-center md:items-start">
-            <span class="text-xl font-bold text-slate-900 dark:text-white font-headline">ParkerTechLabs</span>
-            <p class="font-['Epilogue'] text-sm leading-relaxed text-slate-500 dark:text-slate-400">© 2024 ParkerTechLabs. Crafting digital excellence.</p>
+<footer class="bg-surface-container-low border-t border-outline-variant/30">
+    <div class="max-w-7xl mx-auto px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+            <div class="lg:col-span-2">
+                <div class="text-2xl font-black font-headline text-on-surface mb-4">Parker Tech Lab</div>
+                <p class="text-on-surface-variant text-sm leading-relaxed max-w-xs">
+                    A modern web design and development studio helping businesses
+                    create better digital experiences through strategy, design, and technology.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-label font-bold text-sm uppercase tracking-wider text-on-surface mb-4">Navigation</h4>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-on-surface-variant text-sm hover:text-primary transition-colors">Home</a></li>
+                    <li><a href="#services" class="text-on-surface-variant text-sm hover:text-primary transition-colors">Services</a></li>
+                    <li><a href="#work" class="text-on-surface-variant text-sm hover:text-primary transition-colors">Work</a></li>
+                    <li><a href="#about" class="text-on-surface-variant text-sm hover:text-primary transition-colors">About</a></li>
+                    <li><a href="#contact" class="text-on-surface-variant text-sm hover:text-primary transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-label font-bold text-sm uppercase tracking-wider text-on-surface mb-4">Services</h4>
+                <ul class="space-y-3">
+                    <li><a href="#services" class="text-on-surface-variant text-sm hover:text-primary transition-colors">Web Design</a></li>
+                    <li><a href="#services" class="text-on-surface-variant text-sm hover:text-primary transition-colors">Web Development</a></li>
+                    <li><a href="#services" class="text-on-surface-variant text-sm hover:text-primary transition-colors">AI Integration</a></li>
+                    <li><a href="#services" class="text-on-surface-variant text-sm hover:text-primary transition-colors">Automation</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-label font-bold text-sm uppercase tracking-wider text-on-surface mb-4">Connect</h4>
+                <ul class="space-y-3">
+                    <li><a href="mailto:hello@parkertechlab.com" class="text-on-surface-variant text-sm hover:text-primary transition-colors">Email Us</a></li>
+                    <li><a href="#" class="text-on-surface-variant text-sm hover:text-primary transition-colors">LinkedIn</a></li>
+                    <li><a href="#" class="text-on-surface-variant text-sm hover:text-primary transition-colors">Twitter</a></li>
+                    <li><a href="#" class="text-on-surface-variant text-sm hover:text-primary transition-colors">GitHub</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="flex flex-wrap justify-center gap-8 font-['Epilogue'] text-sm">
-            <a class="text-slate-500 dark:text-slate-400 hover:text-cyan-500 transition-colors hover:underline decoration-cyan-500 underline-offset-4" href="#">Services</a>
-            <a class="text-slate-500 dark:text-slate-400 hover:text-cyan-500 transition-colors hover:underline decoration-cyan-500 underline-offset-4" href="#">Process</a>
-            <a class="text-slate-500 dark:text-slate-400 hover:text-cyan-500 transition-colors hover:underline decoration-cyan-500 underline-offset-4" href="#">Work</a>
-            <a class="text-slate-500 dark:text-slate-400 hover:text-cyan-500 transition-colors hover:underline decoration-cyan-500 underline-offset-4" href="#">Contact</a>
-            <a class="text-slate-500 dark:text-slate-400 hover:text-cyan-500 transition-colors hover:underline decoration-cyan-500 underline-offset-4" href="#">Privacy Policy</a>
-            <a class="text-slate-500 dark:text-slate-400 hover:text-cyan-500 transition-colors hover:underline decoration-cyan-500 underline-offset-4" href="#">Terms</a>
-        </div>
-        <div class="flex gap-4">
-            <a class="text-slate-400 hover:text-primary transition-colors" href="#">
-                <span class="material-symbols-outlined">terminal</span>
-            </a>
-            <a class="text-slate-400 hover:text-primary transition-colors" href="#">
-                <span class="material-symbols-outlined">hub</span>
-            </a>
+        <div class="pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-on-surface-variant text-sm">© 2026 Parker Tech Lab. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="#" class="text-on-surface-variant text-sm hover:text-primary transition-colors">Privacy Policy</a>
+                <a href="#" class="text-on-surface-variant text-sm hover:text-primary transition-colors">Terms of Service</a>
+            </div>
         </div>
     </div>
 </footer>
+
+<script>
+    // Theme Toggle Functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const html = document.documentElement;
+
+    // Check for saved theme preference or default to light
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    html.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+
+    themeToggle.addEventListener('click', function() {
+        const currentTheme = html.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateThemeIcon(newTheme);
+    });
+
+    function updateThemeIcon(theme) {
+        themeIcon.textContent = theme === 'dark' ? 'light_mode' : 'dark_mode';
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+</script>
 </body>
 </html>
